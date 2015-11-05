@@ -27,7 +27,9 @@ NAME=$( echo "$NP"| rev | cut -d"/" -f1 | rev | sed "s| |%20|g" )
 echo -e "TARGET: '$NAME'\n"
 
 # Upload
-curl --globoff --upload-file "$NP" "https://transfer.sh/$NAME"
+curl --globoff --upload-file "$NP" "https://transfer.sh/$NAME" | xsel -i
+
+xsel -o
 
 if [[ "$MP3" == "1" ]]; then
 	printf "\nRemoving temporary file..."
