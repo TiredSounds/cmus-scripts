@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 ## Upload current track from Cmus to file host (in this case transfer.sh).
 ## Passing -t will transcode from FLAC to mp3 if applicable.
 ## Requires curl and ffmpeg.

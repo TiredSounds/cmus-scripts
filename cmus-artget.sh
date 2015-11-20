@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 ## Download cover art for currently playing album in Cmus music player.
 
 ## Requires glyr
